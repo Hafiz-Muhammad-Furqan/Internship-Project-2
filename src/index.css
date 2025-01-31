@@ -1,0 +1,33 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  color-scheme: dark;
+}
+
+body {
+  @apply bg-primary text-white font-['Montserrat'] antialiased;
+  margin: 0;
+  min-height: 100vh;
+}
+
+.glow-effect {
+  @apply transition-all duration-300 hover:shadow-glow;
+}
+
+.nav-link {
+  @apply text-gray-300 hover:text-accent hover:shadow-glow transition-all duration-300;
+}
+
+.btn-primary {
+  @apply px-6 py-3 bg-accent text-primary-dark font-semibold rounded-lg 
+         shadow-md hover:shadow-glow-lg transition-all duration-300
+         transform hover:-translate-y-1;
+}
+
+.card {
+  @apply bg-secondary rounded-xl p-6 hover:shadow-glow transition-all duration-300;
+}
